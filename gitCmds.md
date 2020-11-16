@@ -51,3 +51,12 @@ Renvoie le status actuel de git: branch, commit , added files
 - git checkout workingbranch
 - git merge 
 
+## fetch 
+
+récupère les branches et les commits mais ne fait pas de merge
+
+## pull 
+
+fait un git fetch puis un git merge 
+
+**Toujours débuter un projet avec un git flow init et **

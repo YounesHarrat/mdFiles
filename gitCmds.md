@@ -50,3 +50,4 @@ Renvoie le status actuel de git: branch, commit , added files
 
 - git checkout workingbranch
 - git merge 
+

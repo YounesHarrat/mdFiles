@@ -1,0 +1,25 @@
+body{
+    margin: auto;
+    margin-left: 40vw;
+    margin-right: 40vw;
+}
+
+.div-1 {
+    padding: 5%;
+    text-align: center;
+    width:20vw;
+    height:30vw;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+   }
+
+.div-2 {
+    width:100%;
+    height:100%;
+    box-shadow: 0 0 5px #aaa inset;
+    border-radius: 10px;
+}
+
+.btn{
+    color:'blue';
+}

@@ -1,21 +1,23 @@
-let cite = document.querySelector('p#sight')
+let cite = document.querySelector('p#cite')
 
-let changeBG = document.querySelector("#nuitJour")
+//let cite = document.getElementsByClassName('sight')
 
-let colorsScheme = ['blue', 'red']
+
+let colorsScheme = ['blue', 'red', 'green', 'violet', 'goldenrod','cyan','firebrick']
 
 cite.style.width='fit-content'
+let i ;
 
+let changeBG = document.querySelector("#bgColor")
 changeBG.addEventListener('click', ()=>{    
-
-    let i = 0;
     if(cite.style.background){
-        if(cite.style.background == 'blue'){
-            i=1;
-        }
-        else{
+        if(i == colorsScheme.length-1){
             i=0;
         }
+        else{
+            i++;
+        }
+
     }
     else{
         i=0;
@@ -23,3 +25,30 @@ changeBG.addEventListener('click', ()=>{
     cite.style.background = colorsScheme[i]
 })
 
+let changeCLR = document.querySelector("#txtColor")
+changeCLR.addEventListener('click', ()=>{    
+    if(i == colorsScheme.length-1){
+        i=0;
+    }
+    else{
+        i++;
+    }
+    cite.style.color = colorsScheme[i]
+})
+
+let buttonClass = document.styleSheets.item(0).rules.item(3).cssText
+
+let changeBTN = [];
+changeBTN = document.querySelectorAll('.btn') 
+let j=0;
+
+changeBTN.forEach(button => {
+    button.addEventListener('click', ()=>{
+        if(j == colorsScheme.length-1) j=0;
+        else{
+            j++;
+        }
+        button.style.background = colorsScheme[j]
+        console.log(j)
+    })
+})
